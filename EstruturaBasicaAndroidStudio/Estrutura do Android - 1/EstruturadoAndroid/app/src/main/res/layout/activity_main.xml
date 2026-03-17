@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#307CBF"/>
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="ex: Andréia da Silva"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        tools:layout_editor_absoluteX="40dp" />
+
+
+    <TextView
+        android:id="@+id/cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome"
+        android:textColor="#307CBF"/>
+
+    <EditText
+        android:id="@+id/editCPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="ex: 000.000.000-00"
+        app:layout_constraintTop_toBottomOf="@+id/cpf"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <TextView
+        android:id="@+id/dataNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Data de nascimento"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCPF"
+        android:textColor="#307CBF"/>
+
+    <EditText
+        android:id="@+id/editDataNascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="ex: 09/04/1990"
+        app:layout_constraintTop_toBottomOf="@+id/dataNascimento" />
+
+    <TextView
+        android:id="@+id/nomeMae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da Mãe"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDataNascimento"
+        android:textColor="#307CBF"/>
+
+    <EditText
+        android:id="@+id/editNomeMae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="ex: Andréia da Silva"
+        app:layout_constraintTop_toBottomOf="@+id/nomeMae"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textColor="#F28705"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:textSize="22dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#F28705"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
